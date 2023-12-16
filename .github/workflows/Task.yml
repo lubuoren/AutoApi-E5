@@ -1,5 +1,5 @@
 #自动调用api保活，加密版
-name: Auto Api Task
+name: Api testing for server status
 
 on: 
   release:
@@ -47,7 +47,7 @@ jobs:
     - name: Commit #上传新的refresh_token到仓库
       run: |
         git config --global user.email 2424432087@qq.com
-        git config --global user.name luboren
+        git config --global user.name lubuoren
         git add .
         git commit -m "update new refresh_token" -a
     - name: Push changes
